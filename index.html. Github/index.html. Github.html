@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oluwatosin Victoria Michael – Public Administration Graduate</title>
+<meta name="description" content="Portfolio of Oluwatosin Victoria Michael: public administration graduate with experience in teaching, school administration and HR training.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF1F3; --surface:#FFFFFF; --ink:#13203A; --muted:#4A5A72; --line:#CBD5DD;
+  --accent:#0E6B63; --accent-ink:#FFFFFF; --mark:#F2B233; --mark-ink:#13203A;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1828; --surface:#172338; --ink:#EAF0F6; --muted:#A3B2C6; --line:#2B3A53;
+    --accent:#4FC3B5; --accent-ink:#0F1828; --mark:#F2B233; --mark-ink:#13203A;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1828; --surface:#172338; --ink:#EAF0F6; --muted:#A3B2C6; --line:#2B3A53;
+  --accent:#4FC3B5; --accent-ink:#0F1828; --mark:#F2B233; --mark-ink:#13203A;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+
+/* top links */
+.top{display:flex;gap:1.5rem;flex-wrap:wrap;padding:1.5rem 0;font-weight:500}
+.top a{text-decoration:none;color:var(--muted)}
+.top a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
+
+/* hero: the one memorable thing is the stacked name */
+.hero{padding:2.5rem 0 4.5rem}
+.name{font-family:var(--display);font-weight:800;line-height:.9;letter-spacing:-.035em;margin:0;font-size:clamp(3.4rem,15vw,10.5rem)}
+.name span{display:block}
+.name .mid{display:inline-block;background:var(--mark);color:var(--mark-ink);padding:0 .12em .06em;margin:.06em 0 .02em -.04em;transform:rotate(-1.2deg);transform-origin:left center}
+.lede{max-width:36rem;margin:2.25rem 0 0;font-size:1.3rem;line-height:1.5;color:var(--muted)}
+.lede strong{color:var(--ink);font-weight:600}
+.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:2rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+
+/* sections */
+section{padding:4rem 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:1fr;gap:1.5rem 3rem}
+@media(min-width:56rem){.grid{grid-template-columns:15rem 1fr}}
+h2{font-family:var(--display);font-weight:800;font-size:1.9rem;line-height:1.1;letter-spacing:-.02em;margin:0}
+h3{font-family:var(--display);font-weight:500;font-size:1.3rem;line-height:1.25;margin:0}
+p{margin:0 0 1rem;max-width:42rem}
+.when{color:var(--muted);font-size:.95rem;margin:.2rem 0 .6rem}
+
+/* experience timeline: genuinely sequential, so a rail is fitting */
+.roles{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:3px solid var(--accent)}
+.roles li{position:relative;margin-bottom:2.25rem}
+.roles li::before{content:"";position:absolute;left:calc(-1.5rem - 8px);top:.55rem;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.roles li:last-child{margin-bottom:0}
+
+.win{background:var(--mark);color:var(--mark-ink);border-radius:1rem;padding:1.5rem 1.75rem;max-width:42rem}
+.win h3{font-weight:800;margin-bottom:.4rem}
+.win p{margin:0}
+
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;margin:0;padding:0}
+.chips li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.5rem 1.05rem;font-weight:500}
+.two{display:grid;gap:2rem}
+@media(min-width:44rem){.two{grid-template-columns:1fr 1fr}}
+.plain{margin:0;padding-left:1.2rem;color:var(--muted)}
+.plain li{margin-bottom:.35rem;padding-left:.2rem}
+
+.contact a.big{display:block;font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,5.2vw,2.6rem);letter-spacing:-.02em;line-height:1.2;word-break:break-word;text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--mark);text-underline-offset:6px;margin-bottom:.6rem}
+.contact a.big:hover{text-decoration-color:var(--accent)}
+.brief{display:grid;gap:1.25rem;margin:1.5rem 0 2rem}
+@media(min-width:44rem){.brief{grid-template-columns:repeat(3,1fr)}}
+.brief div{background:var(--surface);border:1px solid var(--line);border-radius:1rem;padding:1.25rem}
+.brief h3{font-size:1.1rem;margin-bottom:.4rem}
+.brief p{margin:0;font-size:.98rem;color:var(--muted)}
+.note{background:var(--surface);border-left:4px solid var(--mark);padding:.8rem 1.1rem;border-radius:0 .6rem .6rem 0;font-size:.98rem;color:var(--muted);max-width:42rem;margin:0 0 1.5rem}
+details{border-top:1px solid var(--line);max-width:46rem}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:1rem 0;font-family:var(--display);font-weight:500;font-size:1.2rem;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:800;color:var(--accent);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+.body{padding:0 0 1.5rem}
+.body h4{font-family:var(--display);font-size:1.05rem;margin:1.2rem 0 .3rem}
+.body p,.body li{color:var(--muted)}
+.body ul{margin:0 0 1rem;padding-left:1.2rem}
+.scroll{overflow-x:auto;margin:.5rem 0 1rem}
+table{border-collapse:collapse;width:100%;min-width:30rem;font-size:.97rem}
+th,td{text-align:left;padding:.6rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--ink)}
+td{color:var(--muted)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:no-preference){
+  .name .mid{animation:settle .7s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes settle{from{transform:rotate(-6deg) translateY(.15em);opacity:0}to{transform:rotate(-1.2deg);opacity:1}}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top" aria-label="Page sections">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#hr-project">HR project</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1 class="name" aria-label="Oluwatosin Victoria Michael">
+      <span>Oluwatosin</span>
+      <span class="mid">Victoria</span>
+      <span>Michael</span>
+    </h1>
+    <p class="lede">Public administration graduate in Lagos. I keep records straight, communicate clearly with the people involved, and have <strong>taught a classroom to a competition win.</strong></p>
+    <div class="actions">
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn ghost" href="#experience">See my experience</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="grid">
+      <h2>About</h2>
+      <div>
+        <p>I graduated from the Federal University of Oye Ekiti with a BSc in Public Administration, Second Class Upper Division. Since then I have worked in schools: first as administrative staff, then as a class teacher during my NYSC year.</p>
+        <p>I also completed HR training with AJID, so I am looking for roles in human resources, administration and graduate trainee programmes where organised records and good communication matter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="grid">
+      <h2>Experience</h2>
+      <ol class="roles">
+        <li>
+          <h3>Class Teacher, NYSC</h3>
+          <p class="when">New Spring High School, Ogun State · Feb 2025 to Jan 2026</p>
+          <p>Taught a class for my service year and prepared students for an inter-school spelling competition.</p>
+          <div class="win">
+            <h3>Inter-school spelling competition winners</h3>
+            <p>My students won the competition, and it is the project I am proudest of from the year.</p>
+          </div>
+        </li>
+        <li>
+          <h3>Administrative Staff, Intern</h3>
+          <p class="when">Excel Comprehensive School, Lagos · Jul 2024 to Dec 2024</p>
+          <p>Supported the school office with day-to-day administration and record keeping.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="grid">
+      <h2>Skills</h2>
+      <div class="two">
+        <div>
+          <h3>Tools and working skills</h3>
+          <ul class="chips" style="margin-top:1rem">
+            <li>Microsoft Excel</li>
+            <li>Microsoft Word</li>
+            <li>Microsoft PowerPoint</li>
+            <li>Records and database management</li>
+            <li>Stakeholder communication</li>
+          </ul>
+        </div>
+        <div>
+          <h3>HR training (AJID)</h3>
+          <ul class="plain" style="margin-top:1rem">
+            <li>Recruitment and talent acquisition</li>
+            <li>Performance management</li>
+            <li>Learning and development</li>
+            <li>Employee relations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hr-project">
+    <div class="grid">
+      <h2>HR project from my AJID training</h2>
+      <div>
+        <p>During my AJID HR training I built an end-to-end toolkit for the employee lifecycle, from hiring to offboarding, aimed at an HR Generalist or People Operations role.</p>
+        <p class="note">This is a practice project for a fictional remote-first technology company. The results and dashboard figures are mock data and expected outcomes, not real company results.</p>
+
+        <div class="brief">
+          <div><h3>Challenge</h3><p>A fast-growing remote-first tech firm had unstructured workflows, hiring managers using different criteria, 25% candidate drop-off during interviews and 18% turnover within 90 days because onboarding was inconsistent.</p></div>
+          <div><h3>Action</h3><p>I designed one standard framework for the whole employee lifecycle: compliance guidelines, a candidate scoring matrix, structured interview guides, a 30-60-90 day onboarding plan and data trackers.</p></div>
+          <div><h3>Expected result</h3><p>Lower operational risk, no offboarding errors, time-to-hire cut by about 15%, and metrics the company can track as it grows.</p></div>
+        </div>
+
+        <details>
+          <summary>Recruitment and talent acquisition</summary>
+          <div class="body">
+            <h4>Job description: Junior People Operations Specialist</h4>
+            <p>Remote (US/Canada), People Team. The role is the backbone of daily HR operations: onboarding, HRIS data integrity, compliance monitoring and benefits support.</p>
+            <ul>
+              <li>Coordinate weekly new-hire cohorts, including IT provisioning and payroll.</li>
+              <li>Keep employee records accurate and current in the HRIS (BambooHR or Workday).</li>
+              <li>Act as first contact for questions on policies, benefits and paid time off.</li>
+            </ul>
+            <h4>Structured interview guide</h4>
+            <p><strong>Problem solving and adaptability.</strong> Tell me about a time you managed several tight deadlines and a sudden change disrupted your plan. Strong answers show prioritising by business urgency, telling stakeholders about timeline changes, and staying calm.</p>
+            <p><strong>Discretion and confidentiality.</strong> An employee asks if their name is on an unannounced layoff list that you can access. Strong answers set a clear boundary without getting defensive, follow privacy rules, and point the person to the official communications channel.</p>
+            <h4>Candidate scoring matrix</h4>
+            <div class="scroll"><table>
+              <thead><tr><th>Area</th><th>What is assessed</th><th>Weight</th></tr></thead>
+              <tbody>
+                <tr><td>Technical skill</td><td>Data entry, spreadsheets, ATS/HRIS basics</td><td>20%</td></tr>
+                <tr><td>Problem solving</td><td>Multi-tasking and adapting when priorities shift</td><td>25%</td></tr>
+                <tr><td>Confidentiality</td><td>Ethical handling of sensitive data</td><td>30%</td></tr>
+                <tr><td>Communication</td><td>Clarity, active listening, structured answers</td><td>15%</td></tr>
+                <tr><td>Values alignment</td><td>Empathy, collaboration, growth mindset</td><td>10%</td></tr>
+              </tbody>
+            </table></div>
+            <p>Each area is scored from 1 to 5 and multiplied by its weight.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Onboarding and offboarding</summary>
+          <div class="body">
+            <h4>30-60-90 day new-hire checklist</h4>
+            <p><strong>Days 1 to 30, learn.</strong> Day 1: payroll and I-9/W-4 verification, HRIS profile, team welcome. Week 1: IT hardware, credentials and benefits enrolment. Day 30: review procedures and pass the foundational modules.</p>
+            <p><strong>Days 31 to 60, contribute.</strong> Week 5: move from shadowing to doing low-risk recurring weekly updates alone. Day 60: co-deliver a project with a senior mentor.</p>
+            <p><strong>Days 61 to 90, own.</strong> Week 9: take full ownership of an independent workflow. Day 90: complete the probationary review.</p>
+            <h4>Offboarding workflow</h4>
+            <p>Single sign-on, company email and database access are revoked automatically at 5:00 PM local time on the last day. Prepaid shipping containers are sent so hardware comes back within 5 business days.</p>
+            <h4>Exit interview questions</h4>
+            <ul>
+              <li>What were the main reasons you decided to leave?</li>
+              <li>Did you have clear targets and the resources to do your job?</li>
+              <li>What is your view of your supervisor’s leadership style, and what would you change?</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>Performance management and policy samples</summary>
+          <div class="body">
+            <h4>Performance improvement plan (sample)</h4>
+            <p>Example case: an Account Executive (John Doe, managed by Jane Smith) on a 60-day plan. Current output is 10 calls a week and 1 lead a month; the target is 40 calls a week and 4 leads a month.</p>
+            <ul>
+              <li>Weekly 30-minute coaching sessions on the metrics.</li>
+              <li>Progress reviews at Day 30 and Day 60.</li>
+              <li>If targets are not met and sustained in 60 days, the matter escalates under the disciplinary process, up to separation.</li>
+            </ul>
+            <h4>Draft policy: remote work guidelines</h4>
+            <ul>
+              <li>Purpose: set performance and security standards for remote work.</li>
+              <li>Core hours: stay responsive from 9:00 AM to 3:00 PM EST.</li>
+              <li>Security: no unencrypted public networks, all access through the company VPN, and no local copies of personal or company data on personal devices.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>HR metrics dashboard (mock data)</summary>
+          <div class="body">
+            <p>A sample dataset tracking hiring speed, retention and data quality over four quarters.</p>
+            <div class="scroll"><table>
+              <thead><tr><th>Metric</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Target</th></tr></thead>
+              <tbody>
+                <tr><td>Time-to-hire (days)</td><td>42</td><td>39</td><td>35</td><td>31</td><td>&lt; 35</td></tr>
+                <tr><td>90-day new-hire retention</td><td>82%</td><td>85%</td><td>91%</td><td>94%</td><td>&gt; 90%</td></tr>
+                <tr><td>Quarterly voluntary turnover</td><td>4.5%</td><td>4.1%</td><td>3.2%</td><td>2.8%</td><td>&lt; 12% a year</td></tr>
+                <tr><td>HRIS data accuracy</td><td>96.4%</td><td>98.1%</td><td>99.5%</td><td>100%</td><td>99.9%</td></tr>
+                <tr><td>Offer acceptance rate</td><td>74%</td><td>78%</td><td>83%</td><td>86%</td><td>&gt; 80%</td></tr>
+              </tbody>
+            </table></div>
+            <h4>What the numbers show</h4>
+            <ul>
+              <li>After the 30-60-90 checklist launched in Q2, 90-day retention rose from 82% to 94% by Q4.</li>
+              <li>Standardised interview guides and scoring cut time-to-hire from 42 days to 31.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="grid">
+      <h2>Education</h2>
+      <div>
+        <h3>BSc Public Administration</h3>
+        <p class="when">Federal University of Oye Ekiti · 2019 to 2024</p>
+        <p>Second Class Upper Division.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="grid">
+      <h2>Contact</h2>
+      <div>
+        <p>I am open to graduate trainee, HR and administration roles. Email or call me directly.</p>
+        <a class="big" href="mailto:michaeltosin54@gmail.com">michaeltosin54@gmail.com</a>
+        <a class="big" href="tel:+2349077369236">09077369236</a>
+        <p class="when">Lagos, Nigeria</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Oluwatosin Victoria Michael</footer>
+</div>
+</body>
+</html>
